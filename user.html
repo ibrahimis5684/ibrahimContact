@@ -15,15 +15,14 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
 </head>
 <body>
-    <div id="app">
+    <form id="app">
         <nav class="app-nav">
             <div class="row">
                 <div class="logo">
                     <img src="assets/images/logo.png" alt="Quick">
                 </div>
                 <ul class="menu">
-                    <li><a href="#">shop</a></li>
-                    <li><a href="#">login</a></li>
+                    <li><button type="submit">save</button></li>
                 </ul>
             </div>
         </nav>
@@ -32,16 +31,16 @@
             <div class="row">
                 <div class="profile">
                     <div class="profile-image">
-                        <img src="assets/images/new story.jpg" alt="ibrahim">
-                    </div>
+                        <input type="file" id="profile-pic-upload" accept="image/jpeg, image/png" hidden>
+                        <label for="profile-pic-upload" id="upload-label">
+                          <i class="fa-thin fa-camera-viewfinder"></i>
+                        </label>
+                        <img id="profile-pic-preview" src="" alt="Profile Picture">
+                    </div>                                              
                     <div class="details-box">
-                        <div class="name">ibrahim islam</div>
+                        <input class="name" type="text" value="your name">
                         <div class="occupation">
-                            <span>graphic designer</span>
-                            <span>|</span>
-                            <span>web designer</span>
-                            <span>|</span>
-                            <span>E-commerce Businessman</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -83,8 +82,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
     <!-- script -->
-    <script src="js/app.js"></script>
+    <script src="js/user.js"></script>
 </body>
 </html>
